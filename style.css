@@ -212,7 +212,7 @@ nav a:hover {
 #skills {
   background:
     linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
-    url('skills3.jpeg') center/cover no-repeat;
+    url('Skills3.jpeg') center/cover no-repeat;
 }
 
 .skills-grid {
