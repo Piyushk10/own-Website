@@ -1,0 +1,513 @@
+/* ================= EDUCATION GRID ================= */
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* ================= EXPERIENCE GRID ================= */
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.exp-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+/* ================= UNDERLINE SECTION TITLES ================= */
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  display: inline-block;
+  border-bottom: 2px solid #2b2b2b;
+  padding-bottom: 6px;
+}
+
+/* ================= HOVER EFFECT ON TEXT ================= */
+.section p:hover,
+.section li:hover,
+.section strong:hover {
+  color: var(--green);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* ================= PROFILE JUSTIFIED ================= */
+.profile-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ================= KEEP YOUR EXISTING STYLES ================= */
+
+/* Keep rest of your CSS unchanged below this line */
+
+:root {
+  --navy: #1f2d3d;
+  --green: #1f5f3a;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --border: #e6e6e6;
+}
+
+/* ================= BASE ================= */
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Tinos', serif;
+  background: #ffffff;
+  color: #2b2b2b;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ================= HEADER ================= */
+.site-header {
+  background:
+    linear-gradient(rgba(31,45,61,0.80), rgba(31,45,61,0.80)),
+    url('header1.jpeg') center/cover no-repeat;
+  position: sticky;
+  Top:10px;
+  z-index: 1000;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 70px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ================= TITLES ================= */
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.secondary-title {
+  margin-top: 50px;
+}
+
+/* ================= PROFILE ================= */
+#profile {
+  background:
+    linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+    url('profile.jpg') center/cover no-repeat;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;   /* IMPORTANT */
+  max-width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.image-wrapper img {
+  display: block;
+}
+
+.image-wrapper .watermark {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.image-wrapper,
+.certificate-wrapper {
+  position: relative;
+}
+
+.img-watermark {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  opacity: 0.35;
+  pointer-events: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* ================= EDUCATION ================= */
+#education {
+  background:
+    linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+    url('Education2.jpeg') center/cover no-repeat;
+}
+
+.edu-block {
+  margin-bottom: 25px;
+}
+
+.edu-block strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* ================= SKILLS ================= */
+#skills {
+  background:
+    linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+    url('skills3.jpeg') center/cover no-repeat;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.skills-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.skills-column ol {
+  padding-left: 20px;
+}
+
+.skills-column li {
+  margin-bottom: 8px;
+}
+
+/* ================= EXPERIENCE ================= */
+#experience {
+  background:
+    linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+    url('exp.jpeg') center/cover no-repeat;
+  color: #2b2b2b;
+}
+
+.experience-block ul {
+  padding-left: 20px;
+}
+
+.experience-block li {
+  margin-bottom: 8px;
+}
+
+.company-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-logo {
+  width: 28px;
+  pointer-events: none;
+}
+
+/* ================= CERTIFICATIONS ================= */
+#certifications {
+  background:
+    linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.50)),
+    url('certificate.jpeg') center/cover no-repeat;
+  color: #2b2b2b;
+}
+
+.certificate-wrapper {
+  text-align: left;
+}
+
+.certificate-wrapper img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.certificate-name {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* ================= CONTACT ================= */
+#contact {
+  background:
+    linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+    url('header1.jpeg') center/cover no-repeat;
+}
+
+/* ================= LINKS ================= */
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #14452a;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--navy);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+/* ================= EDUCATION SIDE BY SIDE ================= */
+.edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.edu-column .section-title {
+  margin-top: 0;
+}
+
+/* ================= EXPERIENCE SIDE BY SIDE ================= */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.exp-column ul,
+.exp-full ul {
+  padding-left: 20px;
+}
+
+.exp-full {
+  grid-column: 1 / -1;
+  margin-top: 40px;
+}
+
+/* ================= UNDERLINE ALL SECTION TITLES ================= */
+.section-title {
+  display: inline-block;
+  border-bottom: 2px solid #2b2b2b;
+  padding-bottom: 6px;
+}
+
+/* ================= HOVER EFFECT (INTERACTIVE FEEL) ================= */
+.section p:hover,
+.section li:hover,
+.section strong:hover {
+  color: var(--green);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* ================= PROFILE JUSTIFIED ================= */
+.profile-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* ================= JUSTIFY ALL BULLET POINTS ================= */
+.section li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* ===== REMOVE EXTRA GAP IN EXPERIENCE SECTION ===== */
+
+/* Reduce gap below "Experience" heading */
+#experience .section-title {
+  margin-bottom: 15px;
+}
+
+/* Remove extra space around company line */
+#experience .company-line {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* Remove extra space above Compliance heading */
+#experience .exp-subtitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* ================= CERTIFICATIONS GRID ================= */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 110px;
+  margin-top: 30px;
+}
+
+.certificate-wrapper {
+  text-align: center;
+}
+
+.certificate-wrapper img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.certificate-name {
+  margin-top: 10px;
+  font-weight: 600;
+}
+/* ================= MOBILE RESPONSIVE FIX ================= */
+
+@media (max-width: 768px) {
+
+  /* Header layout */
+  .header-flex {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px 10px;
+  }
+
+  /* Profile section */
+  .profile-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile-image img {
+    max-width: 220px;
+    margin: auto;
+  }
+
+  .profile-content p {
+    text-align: justify;
+  }
+
+  /* Skills section */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  /* Education section */
+  .edu-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  /* Experience section */
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .exp-full {
+    grid-column: auto;
+  }
+
+ /* Certificates - MOBILE ONLY */
+@media (max-width: 768px) {
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .certificate-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .site-header {
+    height: 60px;
+    padding: 0px 15px;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;   /* align both name and nav left */
+    gap: 0px;
+  }
+
+  .logo {
+    font-size: 15px;
+    margin: 0px;                 /* IMPORTANT */
+    white-space: nowrap;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  /* align exactly under logo */
+    gap: 4px 5px;
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 13px;
+    margin: 0;
+  }
+
+}
+
